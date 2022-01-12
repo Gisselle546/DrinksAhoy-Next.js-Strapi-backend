@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wines",
+  "info": {
+    "singularName": "wine",
+    "pluralName": "wines",
+    "displayName": "Wine",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "brand": {
+      "type": "enumeration",
+      "enum": [
+        "Malbec",
+        "Chardonnay",
+        "Cabernet"
+      ]
+    },
+    "year": {
+      "type": "integer"
+    }
+  }
+}

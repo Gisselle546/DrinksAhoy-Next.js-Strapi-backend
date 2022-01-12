@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "beers",
+  "info": {
+    "singularName": "beer",
+    "pluralName": "beers",
+    "displayName": "Beer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "abv": {
+      "type": "float"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

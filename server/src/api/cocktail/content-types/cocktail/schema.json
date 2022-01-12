@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cocktails",
+  "info": {
+    "singularName": "cocktail",
+    "pluralName": "cocktails",
+    "displayName": "Cocktail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Abv": {
+      "type": "float"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
