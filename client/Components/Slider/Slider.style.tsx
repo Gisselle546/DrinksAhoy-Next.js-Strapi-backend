@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { device } from '../../utils/device';
 
 export const SliderWrapper = styled.div`
 display:flex;
@@ -7,6 +7,8 @@ flex-direction:column;
 justify-content:space-between;
 height:37rem;
 background-color:#36a;
+
+
 
 `;
 
@@ -17,6 +19,14 @@ justify-content:space-between;
 align-items:center; 
 height:100%; 
 width:100%;
+
+@media ${device.mobile} {
+    height:45%
+    width:100%;
+  }
+
+
+
 
 
 `;

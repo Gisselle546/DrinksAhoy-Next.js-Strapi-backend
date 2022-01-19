@@ -1,4 +1,24 @@
 import styled from 'styled-components';
+import { device } from '../../utils/device';
+
+
+
+
+export const MainContainer = styled.div`
+display:flex; 
+justify-content:center; 
+height:30rem;
+@media ${device.mobile} {
+  display:flex;
+  flex-direction:column;
+  align-items:center;      
+  
+}
+
+
+
+`;
+
 
 
 export const CardWrapper = styled.div`
@@ -12,7 +32,18 @@ export const CardWrapper = styled.div`
   width:50%;
   text-align: center;
   height:100%;
-`;
+
+
+  @media ${device.mobile} {
+   width:70%;
+   border: 2px solid green;
+     
+    
+  }
+
+
+
+ `;
 
 export const DrinksWrapper = styled.div`
   display: grid;
@@ -39,6 +70,10 @@ export const CardImage = styled.div<{ background: string }>`
 export const CardTextWrapper = styled.div`
   grid-area: text;
   margin: 25px;
+  @media ${device.mobile} {
+    margin:0px;
+    
+  }
 `;
 
 export const CardTextTitle = styled.h2`
@@ -49,6 +84,14 @@ export const CardTextTitle = styled.h2`
   line-height: 1.2;
   margin: 0px;
   color:#fff;
+
+  @media ${device.mobile} {
+    display:flex;
+    justify-content:center;
+    
+     
+   }
+  
  
 `;
 
@@ -56,6 +99,16 @@ export const CardTextBody = styled.p`
   color: grey;
   font-size: 15px;
   font-weight: 300;
+
+  @media ${device.mobile} {
+    display:flex;
+    justify-content:flex-start;
+    margin-left:1rem;
+      
+     
+   }
+
+
 `;
 
 

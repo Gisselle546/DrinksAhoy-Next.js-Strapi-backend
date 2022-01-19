@@ -8,6 +8,13 @@ import Card from '../../Components/Card/Card';
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
+
+gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+
+if (typeof window !== "undefined") {
+    gsap.registerPlugin(ScrollTrigger);
+  }
+
 const Cocktails = ({data}:any) => {
 
     const page = useRef(null);

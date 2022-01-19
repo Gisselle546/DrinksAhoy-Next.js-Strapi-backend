@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { gsap } from "gsap";
 import Link from 'next/link';
+import { device } from '../../utils/device';
 
 
 const Hero = () => {
@@ -18,6 +19,15 @@ const Hero = () => {
     justify-content:center;
     height:100%;
     width:45%;
+
+    @media ${device.mobile} {
+        
+        display:flex;
+        width:100%;
+      }
+    
+
+    
    
     
     
@@ -34,6 +44,11 @@ const Hero = () => {
     width:21%;
     border: 2px solid #fff;
     margin:0 auto;
+
+    @media ${device.mobile} {
+        width:45%;
+      }
+    
    
     `;
 
@@ -44,6 +59,10 @@ const Hero = () => {
     color:#fff;
     font-size:6rem;
     font-family: Cairo, sans-serif,Indie Flower, cursive;
+    @media ${device.mobile} {
+        margin-top:6rem;
+        font-size:3.4rem;
+      }
     
 
     `

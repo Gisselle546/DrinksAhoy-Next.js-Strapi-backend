@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../utils/device';
 
 
 
@@ -17,4 +18,6 @@ cursor:pointer;
 color:#fff;
 background-color:#2e2d2b;
 
+
 `;
+

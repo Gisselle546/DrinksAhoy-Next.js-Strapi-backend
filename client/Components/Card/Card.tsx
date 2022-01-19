@@ -5,7 +5,8 @@ import {
     CardTextWrapper,
     CardTextTitle,
     CardTextBody,
-    WineCardImage
+    WineCardImage,
+    MainContainer
   } from "./Card.style";
 
 interface Props{
@@ -17,7 +18,7 @@ const Card = ({data}:Props) => {
     console.log(data.attributes);
 
     return (
-        <div style={{display:'flex', justifyContent:"center", height:'30rem'}}>
+        <MainContainer>
            <CardWrapper>
                  {data.attributes.abv?(
                  <CardImage background={data.attributes.image}/>
@@ -44,7 +45,7 @@ const Card = ({data}:Props) => {
                 }
                 </CardTextWrapper>
             </CardWrapper>
-        </div>
+        </MainContainer>
     )
 }
 
