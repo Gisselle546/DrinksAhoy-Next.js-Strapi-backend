@@ -86,13 +86,13 @@ const Slider = ({data}:Props) => {
                                 
                                  { 
                           values!==valus?
-                                    <img ref={slidecon} height={"50%"} src={beer.attributes.image}
+                                    <img ref={slidecon} key={values} height={"50%"} src={beer.attributes.image}
                                     alt="Picture of the author"
                                     
                                     /> 
                                     :( 
                                     
-                                    <div style={{height:"84%"}}>
+                                    <div key={values} style={{height:"84%"}}>
                                     
                                     <h2 style={{color:"#fff", fontSize:"1.7rem"}}>{beer.attributes.title}</h2>
                                     

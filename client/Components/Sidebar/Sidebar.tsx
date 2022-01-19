@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { SidebarWrapper,HamburgerWrapper, ListItems,Xspot, ListItem } from './Sidebar.style';
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {AiFillHome} from 'react-icons/ai'
@@ -7,13 +7,14 @@ import Link from 'next/link';
 
 const Sidebar = () => {
     const[open,setOpen] = useState(false)
+    const side = useRef(null);
     
     return (
         <>
             {
 
             open?(
-            <SidebarWrapper>
+            <SidebarWrapper ref={side}>
                 <div style={{display:"flex",justifyContent:"space-between"}}>
                     <ListItems>
                     <Link href="/"><ListItem><AiFillHome/>Home</ListItem></Link>

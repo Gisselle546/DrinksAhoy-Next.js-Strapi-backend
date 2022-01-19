@@ -4,7 +4,7 @@ interface Props{
     details:any
 }
 
-export const Details = ({details}:Props) => {
+const Details = ({details}:Props) => {
 
     return (
         <div style={{display:'flex', margin:"1rem", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px", padding:"0.3rem", justifyContent:"flex-start"}}>
@@ -22,3 +22,4 @@ export const Details = ({details}:Props) => {
     )
 }
 
+export default Details;
