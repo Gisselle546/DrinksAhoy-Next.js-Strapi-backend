@@ -4,16 +4,18 @@ import Hero from '../Components/Hero/Hero'
 import SubHeroHeader from '../Components/SubHeroHeader/SubHeroHeader'
 import { HeroContainer } from './index.style'
 import { useEffect, useState } from 'react'
+import { fetchQuery } from '../utils/fetchqueries'
+import Slider from '../Components/Slider/Slider'
 
 
 
 
 
 
-const Home: NextPage = ({beers}:any) => {
+const Home: NextPage = ({data}:any) => {
 
 
-  console.log(beers)
+
 
   return (
     <div>
@@ -26,11 +28,28 @@ const Home: NextPage = ({beers}:any) => {
         <Hero/>
       </HeroContainer>
       <SubHeroHeader/>
+      <Slider data={data}/>
 
     
       
     </div>
   )
+}
+export const getStaticProps: GetStaticProps = async (context) => {
+
+  const data = await fetchQuery('beers')
+
+  return {
+    props: {
+      
+      data
+
+    },
+    revalidate: 1,
+  };
+
+
+
 }
 
 
