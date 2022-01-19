@@ -9,6 +9,8 @@ export const SidebarWrapper = styled.div`
     z-index:100;
     position:fixed;
     box-shadow:0 0 5px #665;
+    margin-top:3rem;
+    
   
 
 `;

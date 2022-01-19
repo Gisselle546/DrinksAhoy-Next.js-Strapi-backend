@@ -29,6 +29,7 @@ const Home: NextPage = ({data}:any) => {
       </HeroContainer>
       <SubHeroHeader/>
       <Slider data={data}/>
+      <div style={{height:"10rem"}}></div>
 
     
       

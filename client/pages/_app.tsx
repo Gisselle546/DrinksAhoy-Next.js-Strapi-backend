@@ -14,11 +14,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return( 
       <>
-        <div style={{display:"flex", width:"100%"}}>
-             <Sidebar/>
+        
+             <Sidebar />
              <Component {...pageProps} />
-        </div>  
-       
+             <Footer/>
+      
       </>
 
   );

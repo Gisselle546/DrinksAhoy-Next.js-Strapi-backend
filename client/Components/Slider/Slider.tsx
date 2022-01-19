@@ -1,5 +1,6 @@
 import React, { useEffect, useState,useRef }  from 'react';
 import { FaArrowRight,FaArrowLeft} from 'react-icons/fa';
+import Link from 'next/link';
 import {SliderWrapper,SliderItems,Header} from './Slider.style';
 import { gsap}  from "gsap";
 
@@ -116,7 +117,7 @@ const Slider = ({data}:Props) => {
               
             </SliderItems>
 
-           <Header>View All Products</Header>
+            <Link href="/beers"><Header>View All Products</Header></Link>
         </SliderWrapper>
        
     )

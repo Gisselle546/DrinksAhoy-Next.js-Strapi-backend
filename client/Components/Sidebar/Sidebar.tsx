@@ -28,7 +28,7 @@ const Sidebar = () => {
             </SidebarWrapper>
             ):(
                 <HamburgerWrapper>
-                    <GiHamburgerMenu size="32" style={{color:"#36a", cursor:"pointer"}} onClick={()=>setOpen(!open)}/>
+                    <GiHamburgerMenu size="32" style={{color:"#36a", cursor:"pointer", marginTop:"2rem"}} onClick={()=>setOpen(!open)}/>
                 </HamburgerWrapper>
            
             )
