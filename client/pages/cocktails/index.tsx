@@ -45,8 +45,8 @@ const Cocktails = ({data}:any) => {
             <DrinksHeader>Drinks</DrinksHeader>
                 <DrinksWrapper ref={trigger}>
                 {
-                        data.map((drinks:any)=>{
-                            return <Card data={drinks}/>;
+                        data.map((drinks:any,id:any)=>{
+                            return <Card key={id} data={drinks}/>;
                         })
                 }
             </DrinksWrapper>  

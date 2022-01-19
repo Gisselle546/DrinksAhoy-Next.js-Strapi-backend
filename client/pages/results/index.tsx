@@ -23,7 +23,7 @@ const Results = () => {
         router.push("/");
       }
       
-    },[])
+    },[window.innerWidth])
     
      
      const panTo = useCallback(({lat,lng})=>{
