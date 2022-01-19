@@ -1,19 +1,30 @@
-import React, { useCallback, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import List from '../../Components/List';
 import Map from '../../Components/Map';
+import { useRouter } from 'next/router'
 import { ResultWrappers } from './index.style';
-
+import toast from 'react-hot-toast'
 
 
 let service:any;
 
 const Results = () => {
 
+  const router = useRouter()
 
     const mapRef = useRef<any>();
     const [placeA,setPlace] = useState<any>([])
      
-  
+    
+
+    useEffect(() => {
+      if( window.innerWidth < 600){
+        toast.success("Please Use a Larger Device to use this Feature")
+        router.push("/");
+      }
+      
+    },[])
+    
      
      const panTo = useCallback(({lat,lng})=>{
       mapRef!.current!.panTo({lat,lng});
@@ -38,7 +49,7 @@ const Results = () => {
 },[])
 
 
-console.log(placeA)
+
 
 
     return (
