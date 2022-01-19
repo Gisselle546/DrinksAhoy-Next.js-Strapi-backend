@@ -41,7 +41,7 @@ const Wine = ({data}:any) => {
     return (
         <>
              <Content/>
-               <WineHeader ref={page}>Wines</WineHeader>
+               <WineHeader >Wines</WineHeader>
                     <WineWrapper ref={trigger}>
                         {
                             data.map((wine:any)=>{
@@ -50,7 +50,7 @@ const Wine = ({data}:any) => {
                         }
                         
                     </WineWrapper>   
-             
+                    <div style={{height:"50rem"}}></div>
             
             
         </>

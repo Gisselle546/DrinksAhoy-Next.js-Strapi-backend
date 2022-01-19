@@ -14,10 +14,10 @@ interface Props{
 
 const Card = ({data}:Props) => {
 
-    console.log(data.attributes.abv);
+    console.log(data.attributes);
 
     return (
-        <div style={{display:'flex', justifyContent:"center"}}>
+        <div style={{display:'flex', justifyContent:"center", height:'30rem'}}>
            <CardWrapper>
                  {data.attributes.abv?(
                  <CardImage background={data.attributes.image}/>

@@ -11,7 +11,23 @@ export const CardWrapper = styled.div`
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   width:50%;
   text-align: center;
+  height:100%;
 `;
+
+export const DrinksWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: #000;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  width:50%;
+  text-align: center;
+  height:50%;
+`;
+
+
 
 export const CardImage = styled.div<{ background: string }>`
   grid-area: image;

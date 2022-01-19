@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { gsap } from "gsap";
+import Link from 'next/link';
 
 
 const Hero = () => {
@@ -74,7 +75,7 @@ const Hero = () => {
         <HeroWrapper>
             <HeroContainer ref={heroRef}>
             <HeroHeader><span style={{marginLeft:"3rem"}}>Start</span><br/> The Party</HeroHeader>
-            <HeroButton>Learn More</HeroButton>
+            <Link href="/beers"><HeroButton>Learn More</HeroButton></Link>
             </HeroContainer>
             
         </HeroWrapper>

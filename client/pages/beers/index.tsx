@@ -45,7 +45,7 @@ const Beers = ({data}:any) => {
     return (
         <>
              <Content/>
-                <BeerHeader ref={page}>Beers</BeerHeader>
+                <BeerHeader >Beers</BeerHeader>
                     <BeerWrapper ref={trigger}>
                         {
                             data.map((beer:any)=>{

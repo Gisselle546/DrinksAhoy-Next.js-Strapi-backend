@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Content = styled.div`
     display:flex;
     background: url(/cocktails.jpg)  left center/cover;
-    height: 50vh;
+    height: 20vh;
     justify-content:center;
     width:100%;
 `;
