@@ -15,7 +15,7 @@ interface Props{
 
 const Card = ({data}:Props) => {
 
-    console.log(data.attributes);
+ 
 
     return (
         <MainContainer>
