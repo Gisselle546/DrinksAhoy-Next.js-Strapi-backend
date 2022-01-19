@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { SidebarWrapper,HamburgerWrapper, ListItems,Xspot, ListItem } from './Sidebar.style';
 import {GiHamburgerMenu} from 'react-icons/gi'
+import {AiFillHome} from 'react-icons/ai'
+import Link from 'next/link';
+
 
 const Sidebar = () => {
     const[open,setOpen] = useState(false)
@@ -13,9 +16,10 @@ const Sidebar = () => {
             <SidebarWrapper>
                 <div style={{display:"flex",justifyContent:"space-between"}}>
                     <ListItems>
-                        <ListItem>Beers</ListItem>
-                        <ListItem>Cocktails</ListItem>
-                        <ListItem>Wine</ListItem>
+                    <Link href="/"><ListItem><AiFillHome/>Home</ListItem></Link>
+                    <Link href="/beers"><ListItem>Beers</ListItem></Link>
+                    <Link href="/cocktails"><ListItem>Cocktails</ListItem></Link>
+                    <Link href="/wine"><ListItem>Wine</ListItem></Link>
 
                     </ListItems>
                 

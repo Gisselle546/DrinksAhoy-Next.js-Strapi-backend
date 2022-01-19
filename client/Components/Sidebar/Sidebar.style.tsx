@@ -31,7 +31,7 @@ export const ListItems = styled.ul`
 list-style-type:none;
 display:flex;
 flex-direction:column;
-height:50vh
+height:60vh
 justify-content:space-between;
 width:70%;
 align-content:center;
@@ -43,6 +43,6 @@ align-content:center;
 export const ListItem = styled.li`
 color:#fff;
 font-size:1.2rem;
-
+cursor:pointer;
 `;
 

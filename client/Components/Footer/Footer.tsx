@@ -13,6 +13,7 @@ const Footer = () => {
             </div>
             <div style={{display:"flex", height:"20%", alignItems:"flex-end",backgroundColor:"#2e2d2b"}}>
                 <ul style={{listStyleType:"none", display:"flex", fontSize:"1.7rem"}}>
+                    
                     <Link href="/cocktails"><ListItem>Drinks</ListItem></Link>
                     <Link href="/beers"><ListItem>Beer</ListItem></Link>
                     <Link href="/wine"><ListItem>Wine</ListItem></Link>
