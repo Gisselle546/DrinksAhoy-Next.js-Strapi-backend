@@ -6,6 +6,7 @@ import { HeroContainer } from './index.style'
 import { useEffect, useState } from 'react'
 import { fetchQuery } from '../utils/fetchqueries'
 import Slider from '../Components/Slider/Slider'
+import Addresslocator from '../Components/Addresslocator'
 
 
 
@@ -29,7 +30,8 @@ const Home: NextPage = ({data}:any) => {
       </HeroContainer>
       <SubHeroHeader/>
       <Slider data={data}/>
-      <div style={{height:"10rem"}}></div>
+      <div style={{height:"15rem"}}></div>
+      <Addresslocator/>
 
     
       

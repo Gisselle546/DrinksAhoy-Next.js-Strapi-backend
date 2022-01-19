@@ -50,7 +50,7 @@ const Wine = ({data}:any) => {
                         }
                         
                     </WineWrapper>   
-             <div style={{height:"50rem"}}></div>
+             
             
             
         </>
