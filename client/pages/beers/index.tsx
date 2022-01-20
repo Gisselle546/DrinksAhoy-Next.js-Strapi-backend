@@ -1,5 +1,5 @@
 import type { GetStaticProps, NextPage } from 'next'
-import { BeerHeader, Content, BeerWrapper } from './index.style';
+import { BeerHeader, Content, BeerWrapper } from '../../Components/Styles/beers.style';
 import { fetchQuery } from '../../utils/fetchqueries';
 
 import Card from '../../Components/Card/Card';

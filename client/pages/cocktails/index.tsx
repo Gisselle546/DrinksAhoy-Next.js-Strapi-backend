@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { GetStaticProps } from 'next';
 
 import { fetchQuery } from '../../utils/fetchqueries';
-import { Content, DrinksWrapper,DrinksHeader } from './index.style';
+import { Content, DrinksWrapper,DrinksHeader } from '../../Components/Styles/cocktails.style';
 import { gsap } from "gsap/dist/gsap";
 import Card from '../../Components/Card/Card';
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
