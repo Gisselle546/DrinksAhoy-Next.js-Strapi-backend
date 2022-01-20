@@ -1,5 +1,5 @@
 import React from 'react'
-import { Details } from '../Details'
+import  Details  from '../Details'
 import {ListWrapper } from './index.style';
 
 interface Props{
