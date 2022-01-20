@@ -14,6 +14,12 @@ const Results = () => {
 
     const mapRef = useRef<any>();
     const [placeA,setPlace] = useState<any>([])
+
+
+    
+
+
+   
      
     
 
@@ -23,7 +29,10 @@ const Results = () => {
         router.push("/");
       }
       
-    },[window.innerWidth])
+    },[])
+
+
+    
     
      
      const panTo = useCallback(({lat,lng})=>{
