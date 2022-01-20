@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import List from '../../Components/List';
 import Map from '../../Components/Map';
 import { useRouter } from 'next/router'
-import { ResultWrappers } from './index.style';
+import { ResultWrappers } from '../../Components/Styles/results.style';
 import toast from 'react-hot-toast'
 
 

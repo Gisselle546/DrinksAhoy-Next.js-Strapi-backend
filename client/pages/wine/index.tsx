@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import {Content, WineWrapper, WineHeader} from './index.style'
+import {Content, WineWrapper, WineHeader} from '../../Components/Styles/wine.style'
 import Card from '../../Components/Card/Card'
 
 import { gsap } from "gsap/dist/gsap";
