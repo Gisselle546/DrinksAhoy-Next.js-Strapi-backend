@@ -61,7 +61,7 @@ const Hero = () => {
     font-family: Cairo, sans-serif,Indie Flower, cursive;
     @media ${device.mobile} {
         margin-top:6rem;
-        font-size:3.4rem;
+        font-size:2.8rem;
       }
     
 

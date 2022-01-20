@@ -17,6 +17,11 @@ margin-left:30px;
 cursor:pointer;
 color:#fff;
 background-color:#2e2d2b;
+@media ${device.mobile} {
+        
+    margin-left:0px;
+    margin-right:5px;
+  }
 
 
 `;

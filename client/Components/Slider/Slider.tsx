@@ -1,6 +1,8 @@
 import React, { useEffect, useState,useRef }  from 'react';
 import { FaArrowRight,FaArrowLeft} from 'react-icons/fa';
 import Link from 'next/link';
+import styled from 'styled-components';
+import { device } from '../../utils/device';
 import {SliderWrapper,SliderItems,Header} from './Slider.style';
 import { gsap}  from "gsap";
 
@@ -9,6 +11,19 @@ import { gsap}  from "gsap";
 interface Props{
     data:any
 }
+
+const Bottleheader = styled.h2`
+color:#fff; 
+font-size:1.7rem;
+@media ${device.mobile} {
+  font-size:0.8rem
+  
+   
+ }
+
+
+`;
+
 
 
 const Slider = ({data}:Props) => {
@@ -94,7 +109,7 @@ const Slider = ({data}:Props) => {
                                     
                                     <div key={values} style={{height:"84%"}}>
                                     
-                                    <h2 style={{color:"#fff", fontSize:"1.7rem"}}>{beer.attributes.title}</h2>
+                                    <Bottleheader>{beer.attributes.title}</Bottleheader>
                                     
                                     <img  height={"79%"} src={beer.attributes.image}
                                     alt="Picture of the author"

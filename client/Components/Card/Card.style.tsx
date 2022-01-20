@@ -35,7 +35,7 @@ export const CardWrapper = styled.div`
 
 
   @media ${device.mobile} {
-   width:70%;
+   width:80%;
    border: 2px solid green;
      
     

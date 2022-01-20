@@ -11,7 +11,7 @@ export const HeroContainer = styled.div`
 
     @media ${device.mobile} {
         
-        background: url(/Hero.jpeg) center left / cover ;
+        background: url(/Hero.jpeg) left / cover ;
       }
     
       

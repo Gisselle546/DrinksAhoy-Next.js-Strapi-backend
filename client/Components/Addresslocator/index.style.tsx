@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { device } from '../../utils/device';
 
 export const AddresslocationWrapper = styled.div`
 display:flex;
@@ -13,6 +14,10 @@ align-items: center;
 export const Addresslocationheader = styled.h2`
     font-size:2.0rem;
     color:#fff;
+    @media ${device.mobile} {
+        
+      font-size:1.4rem;
+    }
 `;
 
 export const InputContainer = styled.div`
