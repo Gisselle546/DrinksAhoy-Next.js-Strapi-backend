@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { device } from '../utils/device';
+import { device } from '../../utils/device';
 
 export const HeroContainer = styled.div`
 
